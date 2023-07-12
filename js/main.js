@@ -26,7 +26,7 @@ function mostrarProductosDisponibles() {
         mensaje += `${i + 1}. ${productos[i].nombre}\n`;
     }
 
-    // Mostrar el mensaje en la consola y en unA ALERTA
+    // Mostrar el mensaje en la consola y en una alerta
     console.log(mensaje);
     alert(mensaje);
 }
@@ -38,12 +38,12 @@ function elegirProductos() {
     // Solicito al usuario que elija un producto ingresando el número que corresponda
     let opcion = prompt("Elige un producto ingresando el número correspondiente");
 
-    // Validar la opcion que ingreso
+    // Validar la opción que ingresó
     while (opcion !== "1" && opcion !== "2" && opcion !== "3") {
         opcion = prompt("Opción inválida. Elige un producto ingresando el número correspondiente");
     }
 
-    // Creo variables para almacenar la informacion del producto y el resumen de la compra
+    // Creo variables para almacenar la información del producto y el resumen de la compra
     let productoElegido;
     let mensajeCompra = "Resumen de la compra:\n";
 
@@ -63,23 +63,25 @@ function elegirProductos() {
     const precioTotal = productoElegido.precio + (productoElegido.precio * productoElegido.impuesto);
     mensajeCompra += `Precio Total: ${precioTotal.toFixed(2)}\n`;
 
-    // Muestro el resumen de la compra 
+    // Muestro el resumen de la compra
     console.log(mensajeCompra);
     alert(mensajeCompra);
 
-    // Solicito la confirmacion del usuario para comprar
+    // Solicito la confirmación para comprar
     const confirmacion = confirm("¿Deseas confirmar la compra?");
-    if (confirmacion) {
+    
+    const compraConfirmada = confirmacion;
+
+    if (compraConfirmada) {
         alert("Compra realizada con éxito.");
         console.log("Compra realizada con éxito.");
     } else {
         alert("Compra cancelada.");
         console.log("Compra cancelada.");
     }
+    
+    return compraConfirmada;
 }
 
-// Llamo a la funcion
-elegirProductos();
-
-
-
+// Llamo a la función
+const compraRealizada = elegirProductos();
