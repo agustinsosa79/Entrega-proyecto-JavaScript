@@ -1,0 +1,57 @@
+[
+    {
+        "nombre": "Buzo urbano",
+        "categoria": "Buzos",
+        "precio": 15000,
+        "imagen": "buzo-urbano-2.png"
+        
+    },
+    {
+        "nombre": "Gorro",
+        "categoria": "Gorras",
+        "precio": 6400,
+        "imagen": "gorron.png"
+    },
+    {
+        "nombre": "Remera oversize",
+        "categoria": "Remeras",
+        "precio": 13500,
+        "imagen": "remeraurbana.png"
+    },
+    {
+        "nombre": "Pantalón urbano",
+        "categoria": "pantalones",
+        "precio": 10800,
+        "imagen": "unnamed.png"
+    },
+    {
+        "nombre": "Gorro",
+        "categoria": "Gorras",
+        "precio": 6400,
+        "imagen": "gorro-ever.png"
+    },
+    {
+        "nombre": "Pantalón",
+        "categoria": "pantalones",
+        "precio": 9000,
+        "imagen": "pantalon-urbano-2.png"
+    },
+    {
+        "nombre": "Zapatilla Vans",
+        "categoria": "Zapatillas",
+        "precio": 8500,
+        "imagen": "zapatilla-vans.png"
+    },
+    {
+        "nombre": "Remera Urbana",
+        "categoria": "Remeras",
+        "precio": 14000,
+        "imagen": "remer-urbana-1.png"
+    },
+    {
+        "nombre": "Remeron",
+        "categoria": "Remeras",
+        "precio": 10000,
+        "imagen": "remer-urbana-2.png"
+    }
+]

@@ -612,10 +612,9 @@ form .input-group .boton-contacto:hover {
 /*---------carrito-inicio---------*/
 .carrito-item {
   margin: 0 auto;
-  width: 400px;
-  min-height: 100vh;
+  width: 50vw;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-bottom: 270px;
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 600px) {
   .carrito-item {
@@ -632,13 +631,31 @@ form .input-group .boton-contacto:hover {
     justify-content: center;
   }
 }
+.carrito-item .item-carrito img {
+  max-width: 50%;
+  max-height: 50%;
+  width: auto;
+  height: auto;
+  border-radius: 10%;
+  padding: 30px;
+}
+.carrito-item .item-carrito button {
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  background-color: #000;
+  color: #ffffff;
+  padding: 3%;
+  font-weight: bold;
+  font-size: 14px;
+}
 .carrito-item .items {
   margin: 0 auto;
   border-radius: 10px;
   background-color: #ffffff;
   background-position: 10%;
   transform: scale(0.9);
-  padding: 30px;
+  padding: 0;
   box-shadow: 0 0 15px #000;
 }
 @media only screen and (min-width: 1441px) {
@@ -646,6 +663,9 @@ form .input-group .boton-contacto:hover {
     margin: 0 auto;
     padding: 220px;
   }
+}
+.carrito-item .items .t-carrito {
+  text-align: center;
 }
 .carrito-item .items .info-producto {
   text-align: center;
@@ -668,7 +688,7 @@ form .input-group .boton-contacto:hover {
     font-size: 45px;
   }
 }
-.carrito-item .items .boton-carrito {
+.carrito-item .items .boton-comprar-carrito {
   margin-top: 30px;
   align-items: center;
   border-radius: 10px;
@@ -676,30 +696,28 @@ form .input-group .boton-contacto:hover {
   background-color: #000;
   transition: all 0.5s;
   color: #ffffff;
-  padding: 10px 40px;
-  cursor: pointer;
+  padding: 10px 50px;
   font-weight: bold;
   font-size: 17px;
 }
 @media only screen and (min-width: 1441px) {
-  .carrito-item .items .boton-carrito {
+  .carrito-item .items .boton-comprar-carrito {
     font-size: 30px;
     transition: 0;
   }
 }
-.carrito-item .items .boton-carrito:hover {
-  background-color: #000;
+.carrito-item .items .boton-comprar-carrito:hover {
+  background-color: #F6B26B;
   color: #ffffff;
   transition: all 0.5s;
-  padding: 15px 50px;
 }
 @media only screen and (max-width: 600px) {
-  .carrito-item .items .boton-carrito:hover {
+  .carrito-item .items .boton-comprar-carrito:hover {
     transition: none;
   }
 }
 @media only screen and (min-width: 1441px) {
-  .carrito-item .items .boton-carrito:hover {
+  .carrito-item .items .boton-comprar-carrito:hover {
     transition: 0;
   }
 }
@@ -711,6 +729,14 @@ form .input-group .boton-contacto:hover {
   .carrito-item .items .precio {
     font-size: 30px;
   }
+}
+
+.center-alert {
+  position: fixed;
+  left: 44%;
+  transform: translateX(-50%);
+  top: 50%;
+  z-index: 1000;
 }
 
 /* carrito fin */

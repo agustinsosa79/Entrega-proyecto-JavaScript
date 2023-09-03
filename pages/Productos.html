@@ -50,7 +50,8 @@
         <div class="sub-header">
         <h3 class="productos">Productos</h3>
         <h3>Filtro</h3>
-        <select id="categoria" onchange="mostrarProductos()" name="select">
+        <select id="categoria" name="select">
+            <option value="TodosP">Todos los productos</option>
             <option value="Remeras">Remeras</option>
             <option value="Buzos">Buzos</option>
             <option value="pantalones">Pantalones</option>
@@ -64,7 +65,7 @@
                         <figure>
                             <img src="../img/buzo.png" alt="buzo">
                         </figure>
-                        <div class="info-product">
+                        <div class="info-product" id="buzo">
                             <h4>Buzo urbano</h4>
                             <p class="price">$15.000</p>
                             <label for="cantidad">Cantidad:</label>
@@ -72,7 +73,7 @@
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                                <!-- Agrega más opciones si es necesario -->
+                                
                             </select>
                             <button class="boton-agregar">Añadir al carrito</button>
                         </div>
@@ -85,7 +86,7 @@
                         <figure>
                             <img src="../img/gorron.png" alt="gorro">
                         </figure>
-                        <div class="info-product">
+                        <div class="info-product" id="gorro">
                             <h4>Gorro</h4>
                             <p class="price">$6.400</p>
                             <label for="cantidad">Cantidad:</label>
@@ -93,7 +94,7 @@
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                                <!-- Agrega más opciones si es necesario -->
+                                
                             </select>
                             <button class="boton-agregar">Añadir al carrito</button>
                         </div>
@@ -104,9 +105,9 @@
                 <article>
                     <div class="item">
                         <figure>
-                            <img src="../img/remera.png" alt="Remera">
+                            <img src="../img/remeraurbana.png" alt="Remera">
                         </figure>
-                        <div class="info-product">
+                        <div class="info-product" id="remera">
                             <h4>Remera oversize</h4>
                             <p class="price">$13.500</p>
                             <label for="cantidad">Cantidad:</label>
@@ -114,7 +115,7 @@
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                                <!-- Agrega más opciones si es necesario -->
+                                
                             </select>
                             <button class="boton-agregar">Añadir al carrito</button>
                         </div>
@@ -127,7 +128,7 @@
                         <figure>
                             <img src="../img/unnamed.png" alt="Pantalon">
                         </figure>
-                        <div class="info-product">
+                        <div class="info-product" id="pantalon">
                             <h4>Pantalon urbano</h4>
                             <p class="price">$10.800</p>
                             <label for="cantidad">Cantidad:</label>
@@ -135,7 +136,7 @@
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                                <!-- Agrega más opciones si es necesario -->
+                                
                             </select>
                             <button class="boton-agregar">Añadir al carrito</button>
                         </div>
@@ -148,7 +149,7 @@
                         <figure>
                             <img src="../img/gorro-ever.png" alt="gorro">
                         </figure>
-                        <div class="info-product">
+                        <div class="info-product" id="gorro">
                             <h4>Gorro</h4>
                             <p class="price">$6.400</p>
                             <label for="cantidad">Cantidad:</label>
@@ -156,7 +157,7 @@
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                                <!-- Agrega más opciones si es necesario -->
+                                
                             </select>
                             <button class="boton-agregar">Añadir al carrito</button>
                         </div>
@@ -169,7 +170,7 @@
                         <figure>
                             <img src="../img/pantalon-urbano-2.png" alt="Pantalon">
                         </figure>
-                        <div class="info-product">
+                        <div class="info-product" id="pantalon">
                             <h4>Pantalon</h4>
                             <p class="price">$9.000</p>
                             <label for="cantidad">Cantidad:</label>
@@ -177,7 +178,7 @@
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                                <!-- Agrega más opciones si es necesario -->
+                                
                             </select>
                             <button class="boton-agregar">Añadir al carrito</button>
                         </div>
@@ -190,7 +191,7 @@
                         <figure>
                             <img src="../img/zapatilla-vans.png" alt="vans">
                         </figure>
-                        <div class="info-product">
+                        <div class="info-product" id="zapatilla">
                             <h4>Zapatilla Vans</h4>
                             <p class="price">$8.500</p>
                             <label for="cantidad">Cantidad:</label>
@@ -198,7 +199,7 @@
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                                <!-- Agrega más opciones si es necesario -->
+                                
                             </select>
                             <button class="boton-agregar">Añadir al carrito</button>
                         </div>
@@ -211,7 +212,7 @@
                         <figure>
                             <img src="../img/remer-urbana-1.png" alt="remera">
                         </figure>
-                        <div class="info-product">
+                        <div class="info-product" id="remera">
                             <h4>Remera Urbana</h4>
                             <p class="price">$14.000</p>
                             <label for="cantidad">Cantidad:</label>
@@ -219,7 +220,7 @@
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                                <!-- Agrega más opciones si es necesario -->
+                                
                             </select>
                             <button class="boton-agregar">Añadir al carrito</button>
                         </div>
@@ -232,7 +233,7 @@
                         <figure>
                             <img src="../img/remer-urbana-2.png" alt="Remera">
                         </figure>
-                        <div class="info-product">
+                        <div class="info-product" id="remera">
                             <h4>Remeron</h4>
                             <p class="price">$10.000</p>
                             <label for="cantidad">Cantidad:</label>
@@ -240,7 +241,7 @@
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                                <!-- Agrega más opciones si es necesario -->
+                                
                             </select>
                             <button class="boton-agregar">Añadir al carrito</button>
                         </div>
@@ -285,6 +286,7 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/prod.js"></script>
 </body>
 
 </html>
